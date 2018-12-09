@@ -11,7 +11,7 @@ import dkie_solver_function as solver
 # V(x, k, b, A) = 1/2 * k_force_constant * x**2 + A * exp(-(x/b)**2);
 
 # Specify the number of harmonic oscillator basis functions to use.
-nh_order = 16
+nh_order = 32
 
 # Physical Constants
 h_planck = 6.626070040 * 10**-34
