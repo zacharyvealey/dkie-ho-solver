@@ -90,10 +90,11 @@ def get_eigenvalues(Hm, e_offset_cm):
     nrot = 0
 
     # Permute (eigen) vals and vecs in the event of imaginary frequencies.
-    while vals[0] < 0:
-        vals.append(vals.pop(0))
-        vecs.append(vec.pop(0))
-        nrot += 1
+    # This needs to be fixed.
+    #while vals[0] < 0:
+    #    vals.append(vals.pop(0))
+    #    vecs.append(vec.pop(0))
+    #    nrot += 1
     
     # Correct the eigenvalues with the energy offset and report the tunneling
     # splittings.
